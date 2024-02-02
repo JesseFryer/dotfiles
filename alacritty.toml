@@ -1,0 +1,40 @@
+working_directory = "C:/Users/jesse"
+
+[cursor]
+blink_interval = 200
+thickness = 0.01
+
+[font]
+size = 17.0
+
+
+[font.normal]
+family = "UbuntuMono Nerd Font Mono"
+
+[window]
+startup_mode = "Maximized"
+dynamic_padding = true
+opacity = 0.85
+decorations = "None"
+
+[window.padding]
+x = 4
+y = 4
+
+[colors.normal]
+black   = "#21222c"
+red     = "#ff5555"
+green   = "#50fa7b"
+yellow  = "#f1fa8c"
+blue    = "#bd93f9"
+magenta = "#ff79c6"
+cyan    = "#8be9fd"
+white   = "#f8f8f2"
+
+[colors.primary]
+background = "#282a36"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text   = "CellBackground"
+cursor = "CellForeground"
