@@ -24,3 +24,5 @@ api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { noremap = t
 
 -- File tree
 api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
+
+api.nvim_set_keymap('n', '<leader>z', ':ZenMode<CR>', { noremap = true })

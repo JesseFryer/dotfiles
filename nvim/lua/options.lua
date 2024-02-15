@@ -8,6 +8,7 @@ opt.autoindent = true
 opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
+opt.signcolumn = "number"
 
 -- Appearance
 opt.colorcolumn = "79"
@@ -17,6 +18,7 @@ vim.cmd[[TransparentEnable]]
 opt.scrolloff = 10
 opt.encoding = "UTF-8"
 opt.mouse = "r"
+opt.path = opt.path + "**"
 
 -- Colourscheme
-vim.cmd[[colorscheme gruvbox]]
+vim.cmd[[colorscheme tokyonight-storm]]
