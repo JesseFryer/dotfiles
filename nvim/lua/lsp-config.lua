@@ -2,7 +2,8 @@ local lsp = require('lspconfig')
 local servers = { 
     'clangd', 
     'pyright',
-    'hls'
+    'hls',
+    'html'
 }
 
 for _, server in ipairs(servers) do

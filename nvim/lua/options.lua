@@ -9,9 +9,10 @@ opt.tabstop = 4
 opt.softtabstop = 4
 opt.shiftwidth = 4
 opt.signcolumn = "number"
+opt.wrap = false
 
 -- Appearance
-opt.colorcolumn = "79"
+opt.colorcolumn = "80"
 vim.cmd[[TransparentEnable]]
 
 -- Behaviour
@@ -21,4 +22,48 @@ opt.mouse = "r"
 opt.path = opt.path + "**"
 
 -- Colourscheme
-vim.cmd[[colorscheme tokyonight-storm]]
+vim.cmd[[colorscheme gruvbox]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

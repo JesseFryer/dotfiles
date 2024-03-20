@@ -25,4 +25,9 @@ api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { noremap = t
 -- File tree
 api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
 
-api.nvim_set_keymap('n', '<leader>z', ':ZenMode<CR>', { noremap = true })
+-- Snippets
+local snippetsDir = "C:/Users/jesse/Dev/dotfiles/snippets/"
+api.nvim_set_keymap('n', ',html', ":read " .. snippetsDir .. "template.html<CR>7j<S-a>", { noremap = true })
+api.nvim_set_keymap('n', ',cppnc', "gg:read " .. snippetsDir .. "nclass.hpp<CR>ggdd2jwciw", { noremap = true })
+api.nvim_set_keymap('n', ',cppif', "gg:read " .. snippetsDir .. "if.cpp<CR>kddo", { noremap = true })
+api.nvim_set_keymap('n', ',cppfor', "gg:read " .. snippetsDir .. "for.cpp<CR>kddo", { noremap = true })
