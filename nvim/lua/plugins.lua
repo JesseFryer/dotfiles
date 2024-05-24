@@ -20,6 +20,8 @@ local plugins = {
     "Mofiqul/dracula.nvim",
     "neanias/everforest-nvim",
     "rose-pine/neovim",
+    "blazkowolf/gruber-darker.nvim",
+    "xero/miasma.nvim",
 
     "nvim-treesitter/nvim-treesitter",
 
@@ -32,6 +34,14 @@ local plugins = {
             -- or leave it empty to use the default settings
             -- refer to the configuration section below
         }
+    },
+
+    -- Markdown viewer
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() vim.fn["mkdp#util#install"]() end,
     },
 
     -- Transparent backround

@@ -3,7 +3,8 @@ local servers = {
     'clangd', 
     'pyright',
     'hls',
-    'html'
+    'html',
+    'rust_analyzer'
 }
 
 for _, server in ipairs(servers) do

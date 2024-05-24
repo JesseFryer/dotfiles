@@ -14,7 +14,10 @@ api.nvim_set_keymap('n', '<C-l>', '<C-w>l', { noremap = true })
 api.nvim_set_keymap('n', '<C-p>', '"+p', { noremap = true })
 
 -- Easily exit insert mode
-api.nvim_set_keymap('i', 'kj', '<ESC>', { noremap = true })
+api.nvim_set_keymap('i', 'jj', '<ESC>', { noremap = true })
+
+-- Unhighlight search results
+api.nvim_set_keymap('n', '<ESC>', ':nohlsearch<CR>', { noremap = true })
 
 -- Telescope
 api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true })
@@ -24,6 +27,12 @@ api.nvim_set_keymap('n', '<leader>fh', ':Telescope help_tags<CR>', { noremap = t
 
 -- File tree
 api.nvim_set_keymap('n', '<leader>t', ':NvimTreeToggle<CR>', { noremap = true })
+
+-- Move through diagnostics
+api.nvim_set_keymap('n', '[d', 'vim.diagnostic.goto_prev', { desc = "Go to previous [D]iagnostic message" })
+api.nvim_set_keymap('n', ']d', 'vim.diagnostic.goto_next', { desc = "Go to next [D]iagnostic message" })
+api.nvim_set_keymap('n', '<leader>e', 'vim.diagnostic.open_float', { desc = "Show diagnostic [E]rror messages" })
+api.nvim_set_keymap('n', '<leader>q', 'vim.diagnostic.setloclist', { desc = "Open diagnostic [Q]uickfix list" })
 
 -- Snippets
 local snippetsDir = "C:/Users/jesse/Dev/dotfiles/snippets/"

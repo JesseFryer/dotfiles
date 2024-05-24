@@ -13,6 +13,8 @@ opt.wrap = false
 
 -- Appearance
 opt.colorcolumn = "80"
+opt.termguicolors = true
+opt.cursorline = true
 vim.cmd[[TransparentEnable]]
 
 -- Behaviour
@@ -22,9 +24,7 @@ opt.mouse = "r"
 opt.path = opt.path + "**"
 
 -- Colourscheme
-vim.cmd[[colorscheme gruvbox]]
-
-
+vim.cmd[[colorscheme everforest]]
 
 
 
